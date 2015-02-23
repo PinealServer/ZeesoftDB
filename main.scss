@@ -1,0 +1,31 @@
+$icon-font-path: "/bootstrap/fonts/";
+@import '../components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss';
+// vvvvv Site sass/css goes below here vvvvv
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+@import 'CSS:./sticky-footer-navbar';
+
+/* Angular Snap.js component
+-------------------------------------------------- */
+@import 'CSS:../components/angular-snap/angular-snap';
+
+/* Other custom styles
+-------------------------------------------------- */
+
+.snap-content {
+  top: 60px;
+}
+
+.snap-drawers {
+  top: 60px;
+}
+
+.mainPanel {
+  background-color: #fff;
+}
+
+// ^^^^^ Site sass/css goes above here ^^^^^

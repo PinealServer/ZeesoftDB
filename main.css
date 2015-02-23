@@ -1,0 +1,71 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+/* for the basic layout*/
+.row.header{
+	height: 			13vh;
+	min-height:			50px;
+	background-color: 	#009688;;
+}
+
+.logo {
+	margin-top: 		9vh;
+	margin-bottom: 		0px;;
+}
+
+.row:not(.header) .col-md-3,
+.row:not(.header) .col-md-3 * {
+	background-color:	#b2dfdb;
+}
+
+.col-md-9{
+	height:	100%;
+}
+
+@media screen and (max-width: 991px) {
+	.row:not(.header){
+		height: 		82vh;
+	}
+	.col-md-3 {
+		display: none;
+	}
+	.nbsp{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.row:not(.header)>*{
+		height: 		82vh;	
+	}       
+}
+
+/*custom*/
+h1 {
+	font-size: 			8vh;
+}
+
+img {
+	display:block;
+    margin:auto;
+}
+
+button:hover, .picture:hover{
+	box-shadow:			0 6px 10px rgba(0,0,0,.23),0 10px 30px rgba(0,0,0,.19);
+}
+/*this styling is for the searchbar in the people part*/
+
+.typeahead, .tt-query, .tt-hint {
+	border: 2px solid #CCCCCC;
+	border-radius: 8px;
+	font-size: 24px;
+	height: 30px;
+	line-height: 30px;
+	outline: medium none;
+	padding: 8px 12px;
+	width: 396px;
+}
+.typeahead:focus {
+	border: 2px solid #0097CF;
+=======
+	cursor:pointer;
+}
